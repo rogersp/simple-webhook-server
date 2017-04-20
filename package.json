@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "description": "Webhook Server",
   "dependencies": {
-    "express": "~4.x.x",
+    "bitbucket-api": "^0.1.0",
+    "bluebird": "^3.5.0",
     "body-parser": "~1.0.x",
-    "node-rest-client": "~1.5.x"
+    "dotenv": "^4.0.0",
+    "express": "~4.x.x",
+    "lodash": "^4.17.4"
   },
   "scripts": {
     "start": "node webhook-server.js"
+  },
+  "engines": {
+    "node": "6.9.4"
   }
 }
