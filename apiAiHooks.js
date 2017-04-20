@@ -24,6 +24,14 @@ var getCatchHandler = function(res) {
     }
 }
 
+router.get('/test', function(req, res) {
+    bitbucket.listRepos(owner)
+        .then(repos => {
+            res.json(repos);
+        })
+        .catch(getCatchHandler(res));
+})
+
 // work with repositories
 router.post('/repo', function(req, res) {    
     bitbucket.listRepos(owner)

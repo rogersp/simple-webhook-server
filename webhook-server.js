@@ -4,7 +4,7 @@ var config = require('./config');
 var apiAiHooks = require('./apiAiHooks');
 
 var PORT = (process.env.PORT || 5000);
-var HTTP_AUTH_B64_TOKEN = 'dXNlcjEyMzpwYXNzNzg5'; // user123:pass789
+var HTTP_AUTH_B64_TOKEN = new Buffer(`${config.httpAuth.user}:${config.httpAuth.pass}`).toString("base64");
 
 var app = express();
 
