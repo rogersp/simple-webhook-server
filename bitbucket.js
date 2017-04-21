@@ -76,9 +76,9 @@ function listRepoIssues(slug, owner) {
  * 
  */
 function listRepos(owner) {
-    return client.repositoriesAsync()        
-        .then(result => result.filter(repo => repo.has_issues && (owner ? repo.owner == owner : true)))    
-        /*
+    return client.repositoriesAsync()                
+        .then(result => result.filter(repo => owner ? repo.owner == owner : true))
+        /*            
         .then(result => result.map(repo => ({ 
             slug: repo.slug,
             owner: repo.owner        
