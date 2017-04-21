@@ -9,7 +9,7 @@ For information This application support the [Getting Started with Node on Herok
 ## Running Locally
 
 ```sh
-$ git clone https://github.com/thousandeyes/simple-webhook-server.git # or clone your own fork
+$ git clone https://github.com/rogersp/simple-webhook-server.git # or clone your own fork
 $ cd simple-webhook-server
 ```
 
